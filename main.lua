@@ -12,8 +12,8 @@ function love.load()
 
   -- Also just before loading, we push a little message noting that
   -- this is still a WIP and is not prod ready at all
-  local devWarnMessage = love.window.showMessageBox("Quick notice!", "This is still a WIP project. This may or may not be playable or smooth.", "warning", false)
-
+  local devWarnMessage = love.window.showMessageBox("Quick notice!", "This is still a WIP project. This may or may not be playable or smooth.\nBugs or crashes should be reported on our GitHub!", "warning", false)
+  local devShowGitHub = love.window.showMessageBox("GitHub Repository", "https://github.com/saaapphy/lua-heroism/", "info", false)
   -- After the warning and behind the scenes, the window actually gets loaded
   titleFont = love.graphics.newFont(32)
   buttonFont = love.graphics.newFont(24)

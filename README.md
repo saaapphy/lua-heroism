@@ -15,6 +15,12 @@ For installing on Windows, you'll have to go to the <i>LuaBinaries</i> SourceFor
 
 ### Installing Lua for Linux
 
+#### Build from Source
+
+TODO: Fill out.
+
+#### Install from the Terminal
+
 You'll want to get your terminal open for these steps. The commands may vary slightly depending on your distribution of choice.
 
 Debian/Ubuntu: `sudo apt-get install lua5.4`
@@ -31,7 +37,7 @@ If there are other commands or package managers I'm missing, please edit this RE
 
 ### Installing Lua for MacOS
 
-#### Build from source
+#### Build from Source
 
 TODO: Fill out.
 
