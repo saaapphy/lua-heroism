@@ -9,7 +9,7 @@ function love.load()
   -- Here we can start actually building the window
   -- This sets it to 800x600 and enables vsync for consisent feel across machines
   love.window.setVSync(1)
-
+ 
   -- Also just before loading, we push a little message noting that
   -- this is still a WIP and is not prod ready at all
   local devWarnMessage = love.window.showMessageBox("Quick notice!", "This is still a WIP project. This may or may not be playable or smooth.\nBugs or crashes should be reported on our GitHub!", "warning", false)
