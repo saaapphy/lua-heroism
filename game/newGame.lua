@@ -33,18 +33,16 @@ function newGame.init()
       action = function()
         if name == "Identity" then
           print(name)
-        elseif name == "Difficulty" then
+        end
+        if name == "Difficulty" then
           print(name)
-        elseif name == "OK?" then
+        end
+        if name == "OK?" then
           print(name)
-        else
-          print(name .. " button was pressed")
         end
       end
     })
   end
-
-  -- This function handles both init and drawing
 end
 
 function newGame.draw()
@@ -64,6 +62,13 @@ function newGame.draw()
 end
 
 function newGame.mousepressed(x, y, button, istouch, presses)
+  if button == 1 then 
+    for _, btn in ipairs(buttons) do
+      if x >= btn.x and x <= btn.x + btn.width and y >= btn.y and y <= btn.y + btn.height then
+        btn.action()
+      end
+    end
+  end
 end
 
 return newGame

@@ -24,7 +24,8 @@ function love.load()
   local devWarnMessage = love.window.showMessageBox("Quick notice!", "This is still a WIP project. This may or may not be playable or smooth.\nBugs or crashes should be reported on our GitHub!", "warning", false)
   local devShowGitHub = love.window.showMessageBox("GitHub Repository", "https://github.com/saaapphy/lua-heroism/", "info", false)
 
-  -- This is the new initalizer for the main menu
+  -- Not best practice, but basically every window state should be init here
+  -- Probably a bad idea and a heavy load, but it works...
   currentState.init()
   newGame.init()
 end
@@ -51,5 +52,5 @@ function newGameClicked()
 end
 
 function loadGameClicked()
-  love.window.showMessageBox("Sorry...", "This feature is not implemented right now.\nWe apologize for the inconvenience.", "error", false)
+  love.window.showMessageBox("Sorry...", "This functionality has not yet been implemented.\nWe apologize for this inconvenience.", "error", false)
 end
