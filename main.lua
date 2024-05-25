@@ -14,6 +14,7 @@ function love.load()
   -- this is still a WIP and is not prod ready at all
   local devWarnMessage = love.window.showMessageBox("Quick notice!", "This is still a WIP project. This may or may not be playable or smooth.\nBugs or crashes should be reported on our GitHub!", "warning", false)
   local devShowGitHub = love.window.showMessageBox("GitHub Repository", "https://github.com/saaapphy/lua-heroism/", "info", false)
+
   -- After the warning and behind the scenes, the window actually gets loaded
   titleFont = love.graphics.newFont(32)
   buttonFont = love.graphics.newFont(24)
@@ -83,6 +84,8 @@ function love.mousepressed(x, y, button, istouch, presses)
 end
 
 -- These two functions simply point to other functions that supply the logic
+-- We can also safely assume here that the user intended to start a new game
+-- so we can just barrel into the new game mess
 function newGameClicked()
 end
 

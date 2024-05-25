@@ -9,6 +9,9 @@ I advise that you don't... really try since we don't know what may
 go in here just yet.
 ]]--
 
+-- The save file is going to be JSON, hence the requirement of the library
+json  = require "json"
+
 function createSaveFile()
 end
 
