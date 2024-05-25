@@ -10,17 +10,21 @@ go in here just yet.
 ]]--
 
 -- The save file is going to be JSON, hence the requirement of the library
-json  = require "json"
+json  = require "game.json"
 
-function createSaveFile()
+local saveMgr = {}
+
+function saveMgr.createSaveFile()
 end
 
 -- Yes I hope one day to make the content harder to modify
-function validateSaveFile()
+function saveMgr.validateSaveFile()
 end
 
-function loadSaveFileFromLocal()
+function saveMgr.loadSaveFileFromLocal()
 end
 
-function deleteCurrentSaveFile()
+function saveMgr.deleteCurrentSaveFile()
 end
+
+return saveMgr

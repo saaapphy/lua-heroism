@@ -5,6 +5,8 @@ local buttons = {}
 local titleFont
 local buttonFont
 
+local ng = require("game.newGame")
+
 function love.load()
   -- Here we can start actually building the window
   -- This sets it to 800x600 and enables vsync for consisent feel across machines
@@ -87,6 +89,8 @@ end
 -- We can also safely assume here that the user intended to start a new game
 -- so we can just barrel into the new game mess
 function newGameClicked()
+  love.graphics.clear()
+  ng.createCharacterAndChooseDifficulty()
 end
 
 function loadGameClicked()
