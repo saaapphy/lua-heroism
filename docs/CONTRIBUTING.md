@@ -29,5 +29,6 @@ There currently is not much in the way of a "code of conduct" as of writing this
 1. Please only use ['camelCase'](https://developer.mozilla.org/en-US/docs/Glossary/Camel_case) when writing function names or variable names.
 2. Comment your code, it's always good to have a human written explanation of a function.
 3. Please comment your code in English. If English is not your mother tongue, translations are accepted.
+4. If writing documentation, try using more ... informal English, as if you were talking to someone rather than handing them a technical paper.
 
 If you have any other questions, feel free to open an [issue](https://github.com/saaapphy/lua-heroism/issues) and we can start discussion!
