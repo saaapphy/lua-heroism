@@ -38,7 +38,8 @@ function newGame.init()
           print(name)
         end
         if name == "OK?" then
-          print(name)
+          -- Here we take in the data made with the buttons above
+          -- and we write it into a save.json file in saveMgr.
         end
       end
     })
@@ -49,7 +50,7 @@ function newGame.draw()
   
   -- Although this may be slow...
   love.graphics.setFont(titleFont)
-  love.graphics.printf("Lua-Herosim", 0, 50, 800, "center")
+  love.graphics.printf("Lua-Heroism", 0, 50, 800, "center")
 
   -- NOTE: "_" is somtimes used as a placeholder in loops
   -- This loop is responsible for drawing our buttons to the window
