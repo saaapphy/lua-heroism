@@ -6,7 +6,7 @@ local buttonFont
 
 function mainMenu.init()
   -- Initalize font size and dimensions of the buttons
-  titleFont = love.graphics.newFont(32)
+  titleFont = love.graphics.newFont("assets/fonts/OpenSansPX.ttf",60)
   buttonFont = love.graphics.newFont(24)
 
   local buttonWidth = 200

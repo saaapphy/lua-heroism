@@ -7,7 +7,7 @@ local titleFont
 local buttonFont
 
 function newGame.init()
-  titleFont = love.graphics.newFont(32)
+  titleFont = love.graphics.newFont("assets/fonts/OpenSansPX.ttf",60)
   buttonFont = love.graphics.newFont(24)
   local buttonWidth = 200
   local buttonHeight = 50
@@ -40,6 +40,7 @@ function newGame.init()
         if name == "OK?" then
           -- Here we take in the data made with the buttons above
           -- and we write it into a save.json file in saveMgr.
+          -- wooooo
         end
       end
     })
