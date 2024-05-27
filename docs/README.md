@@ -11,7 +11,11 @@ If you want to play or contribute to the game, you'll need to make sure you have
 
 ### Installing Lua for Windows
 
-For installing on Windows, you'll have to go to the <i>LuaBinaries</i> SourceForge page [here](https://sourceforge.net/projects/luabinaries/files/5.4.2/Tools%20Executables/). From there it should be as simple as extract and install.
+For installing on Windows, you'll have to go to the <i>LuaBinaries</i> SourceForge page [here](https://sourceforge.net/projects/luabinaries/files/5.4.2/Tools%20Executables/). Once there, scroll down and download the "<i>lua-5.4.2_Win(whatever bit your computer supports)_bin.zip</i>" file.
+
+Extract that zip file and rename it to whatever you can remember it as (eg: lua or Lua). Put it somewhere safe (I recommend <i>\Program Files</i>), and copy that folder's location.
+
+In the search bar, search up "Edit the system enviorment variables", and select the first option. Click on the button where it says "Enviorment Variables", and edit the Path variable (should be located near the top on user variables). Make a new variable and paste the location you copied earlier. Now you have offically installed Lua on Windows!
 
 ### Installing Lua for Linux
 
@@ -50,3 +54,9 @@ In your terminal, make sure `brew` is up to date; `brew update`. Once you've con
 And it should work its magic.
 
 ---
+
+### Install Love 2D (For Contributers)
+
+Go to the [Love2d](https://love2d.org/) website, and download the file depending on your OS.
+
+TODO: Finish (maybe make platform specific)
