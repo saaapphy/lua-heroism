@@ -16,7 +16,7 @@ function mainMenu.init()
   local spacing = 20
 
   -- Declare the buttons we use and run a loop to insert them into buttons{} table
-  local buttonNames = {"New Game", "Load Game", "Settings", "Quit"}
+  local buttonNames = {"New Game", "Load Game", "Settings", "Quit", "Debug Start"}
 
   -- This absolute mess of a loop inserts the name, position, dimensions and action of each button
   -- into the original button table declared at the start of the script
@@ -36,6 +36,12 @@ function mainMenu.init()
           love.window.showMessageBox("Sorry...", "This functionality has not yet been implemented.\nWe apologize for this inconvenience.", "error", false)
         elseif name == "Quit" then
           love.event.quit()
+
+        -- this is a specially hardcoded start that just dives into the game
+        -- no char create, no nothing, just right into the game
+        elseif name == "Debug Start" then
+          print("Debug start chosen.")
+          -- todo: actually put in the start when the gameplay loop is created
         else
           print(name .. " button was pressed")
         end

@@ -1,6 +1,6 @@
 -- premade player table
 Player = {
-  -- player data
+  -- player data (subject to change)
   plName = nil,
   plGender = nil,
   plLevel = 1,
@@ -31,6 +31,7 @@ Player = {
 }
 
 -- Also the XP table is stored here
+-- Yes I hardcoded the XP value for levels 1 to 100
 local levelTable = {
   100,
   105,
