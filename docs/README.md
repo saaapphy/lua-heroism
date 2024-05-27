@@ -13,7 +13,7 @@ If you want to play or contribute to the game, you'll need to make sure you have
 
 For installing on Windows, you'll have to go to the <i>LuaBinaries</i> SourceForge page [here](https://sourceforge.net/projects/luabinaries/files/5.4.2/Tools%20Executables/). Once there, scroll down and download the "<i>lua-5.4.2_Win(whatever bit your computer supports)_bin.zip</i>" file.
 
-Extract that zip file and rename it to whatever you can remember it as (eg: lua or Lua). Put it somewhere safe (I recommend <i>\Program Files\</i>), and copy that folder's location.
+Extract that zip file and rename it to whatever you can remember it as (eg: lua or Lua). Put it somewhere safe (I recommend <i>\Program Files</i>), and copy that folder's location.
 
 In the search bar, search up "Edit the system enviorment variables", and select the first option. Click on the button where it says "Enviorment Variables", and edit the Path variable (should be located near the top on user variables). Make a new variable and paste the location you copied earlier. Now you have offically installed Lua on Windows!
 
