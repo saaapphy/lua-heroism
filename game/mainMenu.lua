@@ -39,8 +39,9 @@ function mainMenu.init()
 
         -- this is a specially hardcoded start that just dives into the game
         -- no char create, no nothing, just right into the game
+        -- (this has been hyjacked for text testing)
         elseif name == "Debug Start" then
-          print("Debug start chosen.")
+          textClicked()
           -- todo: actually put in the start when the gameplay loop is created
         else
           print(name .. " button was pressed")
