@@ -56,8 +56,10 @@ And it should work its magic.
 ---
 
 <!-- Love2D is required to run the game, I've removed the (for contrib.) portion -->
-### Install Love 2D
+### Install Love2D
 
 Go to the [Love2d](https://love2d.org/) website, and download the file depending on your OS.
 
 TODO: Finish (maybe make platform specific)
+
+### Build Love2D from Source

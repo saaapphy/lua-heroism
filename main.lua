@@ -12,7 +12,8 @@ local text = require("game.text")
 local state = {
   MAIN_MENU = mainMenu,
   NEW_GAME = newGame,
-  -- DEBUG = debug
+  -- this kinda does nothing rn
+  -- DEBUG = debug,
   TEXT = text
 }
 
@@ -21,8 +22,10 @@ local state = {
 local currentState = state.MAIN_MENU
 
 function love.load()
-  -- Here we can start actually building the window
-  -- This sets it to 800x600 and enables vsync for consisent feel across machines
+  -- this prints the mem location of the table (woah)
+  print(text)
+
+  -- This enables vsync for consisent feel across machines
   love.window.setVSync(1)
   --this sets the default graphics filter to nearest, used for scaling up pixel art
   love.graphics.setDefaultFilter("nearest", "nearest")
