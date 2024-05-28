@@ -14,7 +14,7 @@ function text.init()
   text.lineWidth = text.width - text.border * 2
 
   --the actual text
-  text.page = 0
+  text.page = 1
   text.pageNumber = 0
   text.text = {
     "Hai. OwO"
@@ -72,7 +72,7 @@ function text.draw()
   end
 
   --draw the text box
-  love.graphics.draw(text.boxSprite, text.boxX, text.boxY, 0, 20, 10, textXoffset)
+  love.graphics.draw(text.boxSprite, text.boxX, text.boxY, 0, 20, 10, textXoffset[text.page])
 
   --draw the text
   local textToDraw = string.sub(text.text[text.page], 1, text.drawChar)
