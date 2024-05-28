@@ -1,17 +1,28 @@
 Inventory = {
+  -- this only stores the item ids and nothing else
+  -- item info can be looked up in itemTable.lua
   items = {},
 
-  -- todo: put in a "count" arg so we can put multiple items in at once
-  addItem = function(self, itemID)
-    table.insert(self.items, itemID)
+  -- adds count amount of items to inventory
+  addItem = function(self, itemID, count)
+    -- rets 1 if count is nil
+    count = count or 1
+    for i = 1, count do
+      table.insert(self.items, itemID)
+    end
   end,
 
-  -- same for here, this should have a "count" args
-  removeItem = function(self, itemID)
-    for i, id in ipairs(self.items) do
-      if id == itemID then
+  -- removes count amount of items to inventory
+  removeItem = function(self, itemID, count)
+    count = count or 1
+    local removed = 0
+    for i = #self.items, 1, -1 do
+      if self.items[i] == itemID then
         table.remove(self.items, i)
-        break
+        removed = removed + 1
+        if removed == count then
+          break
+        end
       end
     end
   end,

@@ -52,7 +52,7 @@ end
 
 function mainMenu.draw()
   love.graphics.setFont(titleFont)
-  love.graphics.printf("Lua-Herosim", 0, 50, 800, "center")
+  love.graphics.printf("Lua-Heroism", 0, 50, 800, "center")
 
   -- NOTE: "_" is somtimes used as a placeholder in loops
   -- This loop is responsible for drawing our buttons to the window
