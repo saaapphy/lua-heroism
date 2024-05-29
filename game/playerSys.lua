@@ -23,6 +23,7 @@ Player = {
     print(self.plName .. "took " .. amount .. " damage! HP is now " .. self.plHealth)
   end,
 
+  -- todo: expand incrementLevel to check the massive hardcoded levelTable
   incrementLevel = function (self)
     self.plLevel = self.plLevel + 1
     self.plCurrentXP = 0

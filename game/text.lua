@@ -22,6 +22,7 @@ function text.init()
     "This is a test of the text system. It's not perfect, but it's a start. :3",
     "I hope you like it. :D",
     "I'm going to keep talking until you press enter. :P",
+    "I wonder how this will look with hundreds of lines of dialogue. >:3",
   }
 
   -- Ensure textLength is initialized as a table

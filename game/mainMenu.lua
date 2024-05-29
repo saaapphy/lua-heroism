@@ -40,6 +40,7 @@ function mainMenu.init()
         -- this is a specially hardcoded start that just dives into the game
         -- no char create, no nothing, just right into the game
         -- (this has been hyjacked for text testing)
+        -- noooooooooooooooooo
         elseif name == "Debug Start" then
           textClicked()
           -- todo: actually put in the start when the gameplay loop is created
