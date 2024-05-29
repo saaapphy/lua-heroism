@@ -73,4 +73,10 @@ function newGame.mousepressed(x, y, button, istouch, presses)
   end
 end
 
+function newGame.keypressed(key)
+  if key == "escape" then
+    backToMainMenu()
+  end
+end
+
 return newGame
