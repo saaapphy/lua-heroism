@@ -51,6 +51,10 @@ function love.mousepressed(x, y, button, istouch, presses)
   currentState.mousepressed(x, y, button, istouch, presses)
 end
 
+function love.keypressed(key)
+  currentState.keypressed(key)
+end
+
 function changeState(newState)
   currentState = state[newState]
 end

@@ -76,4 +76,10 @@ function mainMenu.mousepressed(x, y, button, istouch, presses)
   end
 end
 
+function mainMenu.keypressed(key)
+  -- This is a placeholder for now
+  -- This is here to prevent errors when the keypressed function is called
+  -- but nothing is done with it
+end
+
 return mainMenu
