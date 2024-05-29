@@ -6,6 +6,7 @@ Item = {
   { itemID = 3, itemName = 'Test Helmet', itemType = 'armour', itemArmourType = 'head', itemDefense = 1, itemValue = 6000},
   { itemID = 4, itemName = 'Test Breastplate', itemType = 'armour', itemArmourType = 'chest', itemDefense = 1, itemValue = 6000},
   { itemID = 5, itemName = 'Test Pants', itemType = 'armour', itemArmourType = 'legs', itemDefense = 1, itemValue = 6000},
+  { itemID = 6, itemName = 'Test Magic Weapon', itemType = 'weapon', itemWeaponType = 'magic', itemDamage = 10, itemValue = 6969},
 }
 
 return Item
